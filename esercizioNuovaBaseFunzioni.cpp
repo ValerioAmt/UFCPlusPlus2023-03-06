@@ -9,7 +9,7 @@ int *aggiungiInFondo(int base[], int lunghezza, int nuovo)
     int i = 0;
     for (int i; i < newLung - 1; i++)
     {
-        base[i] = nuovoArray[i];
+          nuovoArray[i] =base[i];
         // cout << nuovoArray;   //prova stampa
     }
     i++;
