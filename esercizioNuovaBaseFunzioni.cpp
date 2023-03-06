@@ -68,7 +68,7 @@ int *aggiornaInPosizione(int base[], int dim, int valore, int posizione)
    int i = 0; 
    int newArray[dim];
    for(int i = 0; i < dim; i++);
-          if (i == posizione){
+          if (i == posizione - 1){
                newArray[i]=valore;
    }
     return base;
