@@ -37,7 +37,8 @@ int *aggiungiInPosizione(int base[], int dim, int nuovo, int posizione)
 {
     int newLung = dim + nuovo;
     int newArray[newLung];
-    for(int i = 0;i < newLung; i++){
+    for(int i = 0;i < newLung; i++){   //scorro lungo "l'array nuovo " e se l'indice I combacia con l'intero POSIZIONE
+                                        //inserirò l'intero NUOVO nella Iesima posizione dell'array nuovo.
               if(i == posizione){
                 newArray[i] = nuovo;
               }
