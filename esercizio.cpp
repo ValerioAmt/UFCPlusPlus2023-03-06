@@ -11,7 +11,7 @@ int nuovoArray[newLung];
 int i = 0;
     for(int i;i < newLung-1; i ++){
             base[i] = nuovoArray[i];
-            cout << nuovoArray;   
+            cout << nuovoArray;   //prova stampa
 
     }
         i++;
@@ -19,7 +19,20 @@ int i = 0;
          return nuovoArray;
 }
 
-int* aggiungiInTesta (int base[])
+int* aggiungiInTesta (int base[], int nuovo, int lunghezza){
+int newLung = lunghezza + nuovo;
+int newArray[newLung];
+       
+     newArray[0] = nuovo;
+     for (int i = 1; i < newLung; i++){
+              newArray[i] = base[i];
+         
+     }
+      
+
+      
+     
+}
 
 
 
