@@ -44,7 +44,7 @@ int *aggiungiInPosizione(int base[], int dim, int nuovo, int posizione)
 
     }
 
-    return nuovo;
+    return newArray;
 }
 
 // Read
