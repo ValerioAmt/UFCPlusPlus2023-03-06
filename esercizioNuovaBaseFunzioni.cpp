@@ -9,7 +9,7 @@ int *aggiungiInFondo(int base[], int lunghezza, int nuovo)
     int i = 0;
     for (int i; i < newLung - 1; i++)
     {
-          nuovoArray[i] =base[i];
+          nuovoArray[i] = base[i];
         // cout << nuovoArray;   //prova stampa
     }
     i++;
@@ -49,15 +49,21 @@ int *aggiungiInPosizione(int base[], int dim, int nuovo, int posizione)
 
 // Read
 int trovaPosizione(int base[], int dim, int cerca)
-{
-    // todo
-    return -1;
+{   
+ // int newArray[dim];
+ int posizione = 0;
+    for(int i = 0; i < dim; i++){
+         if(base[i] == cerca){
+            posizione = cerca;
+         }
+    }
+    return posizione;
 }
-
+       
 // Update
 int *aggiornaInPosizione(int base[], int dim, int valore, int posizione)
 {
-    // todo
+      
     return base;
 }
 
@@ -71,7 +77,7 @@ int main()
     int valore = 12;
     int posizione = 5;
 
-    int *p = aggiungiInFondo(base, dim, nuovo);
+    int *p = aggiungiInFondo(p, dim, nuovo);
     dim++;
     for (int i = 0; i < dim; i++)
     {
