@@ -24,8 +24,9 @@ int *aggiungiInTesta(int base[], int lunghezza, int nuovo)
     int newLung = lunghezza + nuovo;
     int newArray[newLung];
 
-    newArray[0] = nuovo;
-    for (int i = 1; i < newLung; i++)
+    newArray[0] = nuovo;                  //occupo subito la testa del nuovo array con l'intero passato come paramentro NUOVO
+                                          // occupata la posizione [0] (ovvero la prima), riempo dalla posizione [1] in poi con il for 
+    for (int i = 1; i < newLung; i++)          
     {
         newArray[i] = base[i];
     }
