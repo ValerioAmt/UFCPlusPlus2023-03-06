@@ -64,8 +64,13 @@ int trovaPosizione(int base[], int dim, int cerca)
        
 // Update
 int *aggiornaInPosizione(int base[], int dim, int valore, int posizione)
-{
-      
+{   
+   int i = 0; 
+   int newArray[dim];
+   for(int i = 0; i < dim; i++);
+          if (i == posizione){
+               newArray[i]=valore;
+   }
     return base;
 }
 
