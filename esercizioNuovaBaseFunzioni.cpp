@@ -5,15 +5,15 @@ using namespace std;
 int *aggiungiInFondo(int base[], int lunghezza, int nuovo)
 {
     int newLung = lunghezza + nuovo;
-    int nuovoArray[newLung];
+    int nuovoArray[newLung];                             
     int i = 0;
-    for (int i; i < newLung - 1; i++)
-    {
+    for (int i; i < newLung - 1; i++)                        //riempo il nuovo array(composto da base + nuovo), inizio dall'inizio dell'array
+    {                                                    //per arrivare fino alla penultima posizione, 
           nuovoArray[i] = base[i];
-        // cout << nuovoArray;   //prova stampa
+        // cout << nuovoArray;   //prova stampa            
     }
-    i++;
-    nuovoArray[i] = nuovo;
+    i++;                                                      //essendo la i rimasta alla penultima posizione(ultima posizione escluso int NUOVO)
+    nuovoArray[i] = nuovo;               //riempo l'ultima posizione con nuovo, dopo aver aumentato I cosicchè passi da penutlima a ultima posizione
     return nuovoArray;
 }
 
