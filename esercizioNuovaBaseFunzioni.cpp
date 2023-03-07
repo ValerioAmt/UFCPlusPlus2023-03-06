@@ -21,7 +21,7 @@ int *aggiungiInFondo(int base[], int lunghezza, int nuovo)
 }
 
 // todo
-/*
+
 
 int *aggiungiInTesta(int base[], int lunghezza, int nuovo)
 {
@@ -77,7 +77,7 @@ int *aggiornaInPosizione(int base[], int dim, int valore, int posizione)
    }
     return base;
 }
-*/
+
 int main()
 {
 
@@ -88,25 +88,30 @@ int main()
     int valore = 12;
     int posizione = 5;
 
-    int* p = aggiungiInFondo(p, dim, nuovo);
+    int *nuovoArray1 = aggiungiInFondo(p, dim, nuovo);
+    /*
     dim++;
     for (int i = 0; i < dim; i++)
     {
         cout << p[i] << " ";
     }
     cout << endl;
-}
-/*
-    p = aggiungiInTesta(base, dim, nuovo);
-    // dim++;
+
+*/
+    int *nuovoArray2 = aggiungiInTesta(base, dim, nuovo);
+    /*
+    dim++;
     for (int i = 0; i < dim; i++)
     {
         cout << p[i] << " ";
     }
     cout << endl;
+*/
 
-    p = aggiungiInPosizione(base, dim, nuovo);
-    // dim++;
+    
+    int *nuovoArray3 = aggiungiInPosizione(base, dim, nuovo);
+    /*
+     dim++;
     for (int i = 0; i < dim; i++)
     {
         cout << p[i] << " ";
@@ -114,13 +119,15 @@ int main()
     cout << endl;
 
     cout << trovaPosizione(base, dim, cerca) << endl;
+*/
 
-    p = aggiornaInPosizione(base, dim, valore, posizione);
+    int *nuovoArray4= aggiornaInPosizione(base, dim, valore, posizione);
+/*
     for (int i = 0; i < dim; i++)
     {
         cout << p[i] << " ";
     }
     cout << endl;
-
+*/
     return 0;
-}*/
+}
