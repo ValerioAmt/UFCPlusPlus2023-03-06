@@ -1,0 +1,2 @@
+nuovo;
+    int nuovoArray[newLung];      

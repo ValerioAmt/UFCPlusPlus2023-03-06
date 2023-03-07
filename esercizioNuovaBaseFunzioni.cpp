@@ -2,22 +2,26 @@
 using namespace std;
 
 // Create
-int* aggiungiInFondo(int base[], int lunghezza, int nuovo)
+int *aggiungiInFondo(int base[], int lunghezza, int nuovo)
 {
-    int newLung = lunghezza + nuovo;
-    int nuovoArray[newLung];                             
+    int nuovaLung = lunghezza + 1;
+    int nuovoArray[nuovaLung];                             
     int i = 0;
-    for (int i; i < newLung - 1; i++)                        //riempo il nuovo array(composto da base + nuovo), inizio dall'inizio dell'array
+    for (int i; i < nuovaLung - 1; i++)                        //riempo il nuovo array(composto da base + nuovo), inizio dall'inizio dell'array
     {                                                    //per arrivare fino alla penultima posizione, 
           nuovoArray[i] = base[i];
         // cout << nuovoArray;   //prova stampa            
     }
     i++;                                                      //essendo la i rimasta alla penultima posizione(ultima posizione escluso int NUOVO)
-    nuovoArray[i] = nuovo;               //riempo l'ultima posizione con nuovo, dopo aver aumentato I cosicchè passi da penutlima a ultima posizione
+    nuovoArray[i] = nuovo;     
+    for (i = 0; i < nuovaLung; i++){
+        cout << nuovoArray[i] <<endl;
+    }          //riempo l'ultima posizione con nuovo, dopo aver aumentato I cosicchè passi da penutlima a ultima posizione
     return nuovoArray;
 }
 
 // todo
+/*
 
 int *aggiungiInTesta(int base[], int lunghezza, int nuovo)
 {
@@ -73,7 +77,7 @@ int *aggiornaInPosizione(int base[], int dim, int valore, int posizione)
    }
     return base;
 }
-
+*/
 int main()
 {
 
@@ -91,7 +95,8 @@ int main()
         cout << p[i] << " ";
     }
     cout << endl;
-
+}
+/*
     p = aggiungiInTesta(base, dim, nuovo);
     // dim++;
     for (int i = 0; i < dim; i++)
@@ -118,4 +123,4 @@ int main()
     cout << endl;
 
     return 0;
-}
+}*/
