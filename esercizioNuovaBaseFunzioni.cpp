@@ -2,7 +2,7 @@
 using namespace std;
 
 // Create
-int *aggiungiInFondo(int base[], int lunghezza, int nuovo)
+int* aggiungiInFondo(int base[], int lunghezza, int nuovo)
 {
     int newLung = lunghezza + nuovo;
     int nuovoArray[newLung];                             
@@ -30,7 +30,7 @@ int *aggiungiInTesta(int base[], int lunghezza, int nuovo)
     {
         newArray[i] = base[i];
     }
-
+     cout<< newArray;
     return newArray;
 }
 
@@ -45,7 +45,7 @@ int *aggiungiInPosizione(int base[], int dim, int nuovo, int posizione)
               }
 
     }
-
+     cout << newArray;
     return newArray;
 }
 
@@ -84,7 +84,7 @@ int main()
     int valore = 12;
     int posizione = 5;
 
-    int *p = aggiungiInFondo(p, dim, nuovo);
+    int* p = aggiungiInFondo(p, dim, nuovo);
     dim++;
     for (int i = 0; i < dim; i++)
     {
