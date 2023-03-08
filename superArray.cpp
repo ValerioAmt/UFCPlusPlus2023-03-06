@@ -60,10 +60,10 @@ int trovaPosizione(int base[], int dim, int cerca)
  int posizione = 0;
     for(int i = 0; i < dim; i++){
          if(base[i] == cerca){
-            posizione = cerca;
+            return i;
          }
     }
-    return posizione;
+    return -1;
 }
        
 // Update
