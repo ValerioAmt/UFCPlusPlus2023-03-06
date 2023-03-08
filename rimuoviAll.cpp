@@ -10,11 +10,14 @@ int conta = 0;
                   conta ++;
             }
 int newLung = dim - conta;
-int newArray[newLung];
+int* newArray = new int[newLung];
    for(int i = 0;i < newLung; i++)
        if(base[i] == numToDelete)
            {
             newArray[i] = base[i+1];
+             }
+             else {
+                newArray[i] = base[i];
              }
              return newArray;
 
@@ -26,4 +29,6 @@ int base[5]={1, 4, 3, 4, 5};
 int dim = 5;
 int numElimanare = 4;
 cout << *rimuoviTutto(base, dim, numElimanare);
+
+
 }
