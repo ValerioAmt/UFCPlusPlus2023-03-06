@@ -72,12 +72,21 @@ int *aggiornaInPosizione(int base[], int dim, int valore, int posizione)
    int i = 0; 
    int newArray[dim];
    for(int i = 0; i < dim; i++);
+      newArray[i] = base[i];                       
           if (i == posizione - 1){
                newArray[i]=valore;
    }
     return base;
 }
 
+int *rimuoviTutto(int base[], int dim, int valoreDaEliminare)
+{
+int newArray[dim]
+
+
+
+
+}
 int main()
 {
 
