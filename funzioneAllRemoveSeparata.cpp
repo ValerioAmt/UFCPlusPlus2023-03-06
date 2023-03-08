@@ -11,18 +11,19 @@ int *rimuoviTutto(int base[], int dim, int numToDelete)
         {
             conta++;
         }
-     
+     int j =0;
     int newLung = dim - conta;
     int *newArray = new int[newLung];
     for (int i = 0; i < newLung; i++)
     {
         if (base[i] != numToDelete)
         {
-            newArray[i] += base[i];
+            newArray[j] += base[i];
+            j++;
         }
         else
         {
-            newArray[i] = base[i ++];
+            newArray[j] += base[i ++];
         }
     }
     return newArray;
