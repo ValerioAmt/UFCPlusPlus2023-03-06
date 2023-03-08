@@ -11,6 +11,7 @@ int *rimuoviTutto(int base[], int dim, int numToDelete)
         {
             conta++;
         }
+     
     int newLung = dim - conta;
     int *newArray = new int[newLung];
     for (int i = 0; i < newLung; i++)
@@ -28,13 +29,17 @@ int *rimuoviTutto(int base[], int dim, int numToDelete)
 }
 
 int main()
-{
+{   int quante = 0;
+
     int base[5] = {1, 4, 3, 4, 5};
     int dim = 5;
     int numElimanare = 4;
-    int *puntatore = rimuoviTutto(base, dim, numElimanare);
-    for (int i = 0; i++;)
-    {
-        cout << *puntatore << endl;
+    for (int i = 0; i < dim; i++){
+        if (base[i] == numElimanare)
+            quante++;
+        }
+
+    for(int i=0; i < dim - quante ;i++){
+    cout << *rimuoviTutto(base, dim, numElimanare);
     }
 }

@@ -8,7 +8,7 @@ int base[5] = {24, 46, 8, 4, 6};
 int lunghezza = 5;
 int nuovo = 5;
 
-int newLung = lunghezza + nuovo;
+int newLung = lunghezza + 1;
 int nuovoArray[newLung];
 int i = 0;
     for(int i;i < newLung-1; i ++){

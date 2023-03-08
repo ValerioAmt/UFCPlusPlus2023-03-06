@@ -1,2 +1,1 @@
-nuovo;
-    int nuovoArray[newLung];      
+cout << *rimuoviTutto(base, dim, numElimanare);
