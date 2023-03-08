@@ -22,7 +22,7 @@ int *rimuoviTutto(int base[], int dim, int numToDelete)
         }
         else
         {
-            newArray[i] = base[i + 1];
+            newArray[i] = base[i ++];
         }
     }
     return newArray;
@@ -31,7 +31,7 @@ int *rimuoviTutto(int base[], int dim, int numToDelete)
 int main()
 {   int quante = 0;
 
-    int base[5] = {1, 2, 3, 4, 5};
+    int base[] = {2, 2, 3, 4, 5};
     int dim = 5;
     int numElimanare = 4;
     for (int i = 0; i < dim; i++){
