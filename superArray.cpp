@@ -25,7 +25,7 @@ int *aggiungiInFondo(int base[], int lunghezza, int nuovo)
 
 int *aggiungiInTesta(int base[], int lunghezza, int nuovo)
 {
-    int newLung = lunghezza + nuovo;
+    int newLung = lunghezza + 1;
     int newArray[newLung];
 
     newArray[0] = nuovo;                  //occupo subito la testa del nuovo array con l'intero passato come paramentro NUOVO
@@ -40,10 +40,10 @@ int *aggiungiInTesta(int base[], int lunghezza, int nuovo)
 
 int *aggiungiInPosizione(int base[], int dim, int nuovo, int posizione)
 {
-    int newLung = dim + nuovo;
+    int newLung = dim + 1;
     int newArray[newLung];
     for(int i = 0;i < newLung; i++){   //scorro lungo "l'array nuovo " e se l'indice I combacia con l'intero POSIZIONE
-                                        //inserirò l'intero NUOVO nella Iesima posizione dell'array nuovo.
+              newArray[i] = base[i];                          //inserirò l'intero NUOVO nella Iesima posizione dell'array nuovo.
               if(i == posizione){
                 newArray[i] = nuovo;
               }
