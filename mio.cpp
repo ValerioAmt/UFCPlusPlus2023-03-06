@@ -18,7 +18,7 @@ int *rimuoviTutto(int base[], int dim, int numToDelete)
     {
         if (base[i] != numToDelete)
         {
-            newArray[i] = base[i];
+            newArray[i] += base[i];
         }
         else
         {
@@ -31,15 +31,16 @@ int *rimuoviTutto(int base[], int dim, int numToDelete)
 int main()
 {   int quante = 0;
 
-    int base[5] = {1, 4, 3, 4, 5};
+    int base[5] = {1, 2, 3, 4, 5};
     int dim = 5;
     int numElimanare = 4;
     for (int i = 0; i < dim; i++){
-        if (base[i] == numElimanare)
+        if (base[i] == numElimanare){
             quante++;
+            //cout << quante <<endl;
         }
-
+    }
     for(int i=0; i < dim - quante ;i++){
-    cout << *rimuoviTutto(base, dim, numElimanare);
+    cout << *rimuoviTutto(base, dim, numElimanare) <<endl;
     }
 }
